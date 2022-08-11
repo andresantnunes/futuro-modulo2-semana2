@@ -1,7 +1,7 @@
 package aula2.exemplo3;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Pessoa pessoa = new Pessoa("Nome",100);
         System.out.println(pessoa.retornaNome());
         System.out.println(pessoa.retornaIdade());
@@ -12,5 +12,9 @@ public class Main {
         // o main não tem como saber o valor de cpf
 
         pessoa.printPessoa();
+
+
+        throw new Exception();
+
     }
 }
