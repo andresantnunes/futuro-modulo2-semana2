@@ -3,7 +3,7 @@ package aula4.staticJava;
 import java.util.ArrayList;
 
 public class Main {
-    public static void main(String[] args) {
+    public void main() {
         ListaLocalPessoas listaLocalPessoas = new ListaLocalPessoas();
 
 //        listaLocalPessoas. não conseguimos acessar métodos static a partir de um objeto
@@ -21,6 +21,8 @@ public class Main {
         Pessoa pessoa1 = new Pessoa("Nomee",11);
         Pessoa pessoa2 = new Pessoa("Nomee",11);
 
-        System.out.println("O numero de pessoas criadas é: " + pessoa.getNumeroPessoas());
+        System.out.println("O numero de pessoas criadas é: " + Pessoa.getNumeroPessoas());
+
+        ListaLocalPessoas.printNumeroPessoas();
     }
 }

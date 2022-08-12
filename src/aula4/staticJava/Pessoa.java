@@ -17,6 +17,9 @@ public class Pessoa {
     public static Integer getNumeroPessoas(){
         return numeroPessoas;
     }
+    public static void zerarPessoas(){
+        numeroPessoas=0;
+    }
 
     @Override
     public String toString() {

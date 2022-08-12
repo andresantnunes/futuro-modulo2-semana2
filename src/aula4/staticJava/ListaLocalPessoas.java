@@ -16,4 +16,14 @@ public class ListaLocalPessoas {
     public static ArrayList<Pessoa> getListaPessoa() {
         return listaPessoa;
     }
+
+    public static void printNumeroPessoas(){
+        System.out.println("O numero de pessoas criadas é: " + Pessoa.getNumeroPessoas());
+    }
+
+    public static void deletarListaPessoas(){
+        Pessoa.zerarPessoas();
+        listaPessoa.clear();
+    }
+
 }
