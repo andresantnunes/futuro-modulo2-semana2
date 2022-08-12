@@ -1,4 +1,4 @@
-package aula4;
+package aula4.construtor;
 
 import java.util.ArrayList;
 
@@ -32,5 +32,6 @@ public class Main {
         for(Endereco item : enderecosPessoa){
             System.out.println(item);
         }
+
     }
 }

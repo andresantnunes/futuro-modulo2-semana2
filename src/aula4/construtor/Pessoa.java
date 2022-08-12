@@ -1,4 +1,6 @@
-package aula4;
+package aula4.construtor;
+
+import aula4.construtor.Endereco;
 
 import java.util.ArrayList;
 
@@ -48,5 +50,13 @@ public class Pessoa {
 
     public void setIdade(Integer idade) {
         this.idade = idade;
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                '}';
     }
 }
