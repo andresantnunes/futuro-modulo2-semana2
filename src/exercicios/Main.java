@@ -7,30 +7,17 @@ package exercicios;
 
 public class Main {
     public static void main(String[] args) {
-
         Pessoa pessoa = new Pessoa();
-        System.out.println(pessoa);
+//        pessoa.adicionaDadosPessoa("nome", 10);
+        pessoa.envelhecer();
+        pessoa.setIdade(23);
+        pessoa.setNome("Mauricio");
 
-//        ArrayList<String> listaStrings = new ArrayList<>();
-//        for(String string: listaStrings){
-//            System.out.println(string);
-//        }
-
-        pessoa.setLocalOrigem("rua da pipoca");
-
-        String ruaPessoa = pessoa.getLocalOrigem();
-
-        pessoa.printPessoa();
+        Pessoa pessoa1 = new Pessoa("Nome", 5,"Brasil");
+        pessoa1.envelhecer();
+        pessoa1.printPessoa();
 
         Pessoa pessoaClonada = pessoa.clonePessoa();
-
         pessoaClonada.printPessoa();
-
-        pessoaClonada = pessoa;
-        pessoa.setLocalOrigem("Local 2");
-
-        pessoaClonada.printPessoa();
-
-
     }
 }
